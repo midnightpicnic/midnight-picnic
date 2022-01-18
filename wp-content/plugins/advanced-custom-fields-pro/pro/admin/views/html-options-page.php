@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0003</td>
-<td bgcolor="#eeeeec" align="right">406408</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
+<td bgcolor="#eeeeec" align="right">405576</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/plugins/advanced-custom-fields-pro/pro/admin/views/html-options-page.php" bgcolor="#eeeeec">.../html-options-page.php<b>:</b>0</td>
 </tr>
@@ -44,8 +44,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0003</td>
-<td bgcolor="#eeeeec" align="right">406408</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
+<td bgcolor="#eeeeec" align="right">405576</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/plugins/advanced-custom-fields-pro/pro/admin/views/html-options-page.php" bgcolor="#eeeeec">.../html-options-page.php<b>:</b>0</td>
 </tr>

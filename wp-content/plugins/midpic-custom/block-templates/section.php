@@ -24,7 +24,7 @@
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
 <td bgcolor="#eeeeec" align="center">0.0001</td>
-<td bgcolor="#eeeeec" align="right">406000</td>
+<td bgcolor="#eeeeec" align="right">405680</td>
 <td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/plugins/midpic-custom/block-templates/block-defaults.php'</font> )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/plugins/midpic-custom/block-templates/section.php" bgcolor="#eeeeec">.../section.php<b>:</b>3</td>
 </tr>
