@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
 <td bgcolor="#eeeeec" align="right">405008</td>
 <td bgcolor="#eeeeec">genesis_scripts(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/genesis/lib/js/load-scripts.php" bgcolor="#eeeeec">.../load-scripts.php<b>:</b>36</td>

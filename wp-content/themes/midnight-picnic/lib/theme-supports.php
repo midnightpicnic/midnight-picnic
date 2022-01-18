@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
 <td bgcolor="#eeeeec" align="right">405184</td>
 <td bgcolor="#eeeeec">midpic_theme_supports(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/midnight-picnic/lib/theme-supports.php" bgcolor="#eeeeec">.../theme-supports.php<b>:</b>111</td>
