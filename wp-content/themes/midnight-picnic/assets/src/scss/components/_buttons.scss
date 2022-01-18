@@ -1,0 +1,68 @@
+// Block Library overrides
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button {
+  @include button-baseline;
+  @include button-primary;
+}
+
+// Baseline
+.wp-block-button {
+  width: 100%;
+
+  .wp-block-button__link {
+    @include button-baseline;
+  }
+}
+
+// Primary
+.wp-block-button.is-style-primary {
+  .wp-block-button__link {
+    @include button-primary;
+    position: relative;
+    z-index: 1;
+    padding-right: calc(120px + 1.25rem);
+
+    @include gutenberg {
+      padding-right: calc(60px + 1.25rem);
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: $gradient-rainbow-bright;
+      z-index: -1;
+      transition: $transition;
+      opacity: 0;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &:after {
+      content: '';
+      @extend .icon-manicule-ink;
+      transform: rotate(-90deg) scale(0.75);
+      position: absolute;
+      transform-origin: 50% 18px;
+      top: 21%;
+
+      @include gutenberg {
+        transform: rotate(-90deg) scale(0.5);
+        transform-origin: 50% 27px;
+        top: 12.5%;
+      }
+    }
+  }
+}
+
+.button-grid-break {
+  position: absolute;
+  bottom: -157px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw)!important;
+}

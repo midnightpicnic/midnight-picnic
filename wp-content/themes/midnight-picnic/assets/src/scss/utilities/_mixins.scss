@@ -1,0 +1,119 @@
+// Media queries
+// https://davidwalsh.name/write-media-queries-sass
+@mixin gutenberg {
+  @media only screen and (max-width: $breakpoint-gutenberg) {
+    @content;
+  } 
+}
+@mixin standard {
+  @media only screen and (min-width: $breakpoint-standard) {
+    @content;
+  } 
+}
+@mixin wide {
+  @media only screen and (min-width: $breakpoint-wide) {
+    @content;
+  } 
+}
+// usage
+// @include gutenberg {}
+
+// Remove WP auto-inserted pseudo-elements
+%pseudo-clear {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+// Responsive ratio
+// https://engageinteractive.co.uk/blog/top-10-scss-mixins
+@mixin ratio($x,$y, $position: false) {
+  $padding: unquote( calc($y / $x) * 100 + '%' );
+  @if $position == center {
+    padding-top: calc($padding / 2);
+    padding-bottom: calc($padding / 2);
+  } @else {
+    padding-top: $padding;
+  }
+}
+
+// Padding mixin
+// https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+// Margin mixin
+// https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+// Site Inner
+%site-inner {
+  margin: 0 auto;
+  max-width: calc($size-content + calc($width-margin * 2));
+  @include padding(null, $width-margin, null, $width-margin);
+}
+
+// Buttons
+@mixin button-baseline {
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  text-transform: $button-text-transform;
+  line-height: $button-line-height;
+  letter-spacing: $button-letter-spacing;
+  border-style: $button-border-style;
+  border-width: $button-border-width;
+  border-radius: $button-border-radius;
+  padding: $button-padding;
+  transition: $transition;
+  box-shadow: none;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+@mixin button-primary {
+  background: $button-primary-background-color;
+  border-color: $button-primary-border-color;
+  color: $button-primary-color;
+}
+
+// Forms
+@mixin form-baseline {
+  input,
+  textarea {
+    border-style: $button-border-style;
+    border-width: $button-border-width;
+    border-color: $color-dark;
+    padding: $button-padding;
+    font-size: $button-font-size;
+    background-color: transparent;
+  }
+
+  input {
+    line-height: $button-line-height;
+    border-radius: $button-border-radius;
+    
+    &[type="submit"] {
+      @include button-baseline;
+      @include button-primary;
+    }
+  }
+
+  label {
+    font-size: $font-size-extra-small;
+    text-transform: uppercase;
+  }
+}

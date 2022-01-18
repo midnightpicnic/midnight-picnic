@@ -1,0 +1,97 @@
+body.home {
+  .site-inner {
+    padding-top: 0;
+  }
+}
+
+// Hero
+#hero {
+  background: url(/wp-content/uploads/oranges.png) no-repeat center center;
+  background-size: 500px;
+  padding-top: 225px;
+  padding-bottom: 225px;
+
+  @include gutenberg {
+    background: url(/wp-content/uploads/oranges-trans.png) no-repeat center center;
+    background-size: 83%;
+    @include ratio(500,500, center);
+  }
+
+  h1 {
+    font-size: calc(16px + 12vw);
+    text-shadow: 1px 1px 0px $color-daffodil, 1px 2px 2px rgba(0, 0, 0, 0.25);
+  
+    @include gutenberg {
+      font-size: $font-size-h1;
+    }
+  
+    @include standard {
+      font-size: calc(16px + 12vw); // 160px at 1200px viewport
+      text-shadow: 2px 2px 0px $color-daffodil, 2px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  
+    @include wide {
+      font-size: 160px;
+    }
+  }
+
+  h4 {
+    font-size: $font-size-default;
+    display: block;
+    background-color: $color-alabaster;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+
+    @include standard {
+      display: inline-block;
+      text-align: initial;
+
+      &.has-text-align-right {
+        float: right;
+      }
+    }
+  }
+}
+
+// Manicule
+.icon-container {
+  text-align: center;
+
+  @-webkit-keyframes swinging {
+    0%{-webkit-transform: rotate(15deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(15deg);}
+  }
+  
+  @keyframes swinging {
+    0%{transform: rotate(15deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(15deg);}
+  }
+  
+  .icon-manicule-ink {
+    margin: 0 auto;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3s cubic-bezier(0.4, 0, 0.2, 1) forwards 6.62;
+    animation: swinging 3s cubic-bezier(0.4, 0, 0.2, 1) forwards 6.62;
+  }
+}
+
+// Tabs
+.ui-tabs-tab {
+  transition: none;
+}
+
+.ui-tabs-active {
+  background: $color-daffodil;
+}
+
+// Break the grid
+.grid-break {
+  margin-left: calc(-100% - 4rem);
+
+  @media only screen and (max-width: 565px) {
+    margin-left: 0;
+  }
+}

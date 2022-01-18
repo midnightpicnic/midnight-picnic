@@ -1,0 +1,86 @@
+
+
+// Marquee
+@keyframes no-transform {
+  100% {
+    transform: none;
+  }
+}
+
+.is-style-marquee { 
+  & > * {
+    $items: 3;
+    display: flex;
+    overflow: hidden;
+    
+    &:hover {
+      figure {
+      animation-play-state: paused;
+      }
+    }
+    
+    figure {
+      flex: 1 0 auto;
+      width: calc(100% / ($items - 1));
+      max-width: calc(100% / ($items - 1));
+      font-size: 1.5rem;
+      transform: translateX(-100%);
+      animation: no-transform 3s linear infinite;
+      margin-bottom: 0;
+    }
+
+    @include gutenberg {
+      $items: 2;
+
+      figure {
+        flex: 1 0 auto;
+        width: calc(100% / ($items - 1));
+        max-width: calc(100% / ($items - 1));
+        font-size: 1.5rem;
+        transform: translateX(-100%);
+        animation: no-transform 3s linear infinite;
+        margin-bottom: 0;
+      }
+    }
+
+    @include wide {
+      $items: 4;
+
+      figure {
+        flex: 1 0 auto;
+        width: calc(100% / ($items - 1));
+        max-width: calc(100% / ($items - 1));
+        font-size: 1.5rem;
+        transform: translateX(-100%);
+        animation: no-transform 3s linear infinite;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.is-style-overflow {
+  position: absolute;
+}
+
+.is-style-overflow-a {
+  top: -100px;
+  right: 5vw;
+  max-width: 50vw;
+}
+
+.is-style-card {
+  padding: 3rem;
+
+  &:not(:last-child) {
+    margin-bottom: $spacing-medium;
+  }
+}
+
+.is-style-card-outline {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 2px solid $color-daffodil;
+}

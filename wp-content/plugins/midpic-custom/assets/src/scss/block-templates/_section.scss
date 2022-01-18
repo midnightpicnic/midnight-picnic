@@ -1,0 +1,81 @@
+.midpic-block-section {
+  // Section alignment
+
+  // Normal alignment within normal section
+  //
+
+  // Wide alignment within normal section
+  //
+
+  // Full alignment within normal section
+  //
+
+  &.alignwide,
+  &.alignfull {
+    .midpic-block-section__inner-container > * {
+
+      // Normal alignment within wide section
+      // Normal alignment within full section
+      &:not(.alignwide, .alignfull) {
+        max-width: $size-content;
+        //padding-left: $width-margin;
+        //padding-right: $width-margin;
+        margin-left: auto; 
+        margin-right: auto;
+      }
+    }
+
+    // Full alignment within wide section
+    //
+
+    // Full alignment within full section
+    //
+  }
+
+  // Wide alignment within wide section
+  &.alignwide {
+    .midpic-block-section__inner-container > * {
+      &.alignwide {
+        width: auto;
+        max-width: $size-wide;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // Wide alignment within full section
+  &.alignfull {
+    .midpic-block-section__inner-container > * {
+      &.alignwide {
+        margin: 0 auto;
+        max-width: $size-content;
+
+        @media only screen and (min-width: 1200px) {
+          max-width: calc(calc(calc(100vw - $size-content) / 2) + $size-content - 2rem);
+        }
+
+        @media only screen and (min-width: 1313px) {
+          max-width: $size-wide;
+        }
+      }
+    }
+  }
+
+  // Inner block margins
+  .midpic-block-section__inner-container > *:last-child {
+    margin-bottom: 0;
+  }
+
+  // Has background
+  &.has-background {
+    .midpic-block-section__inner-container > * {
+      @extend .has-background;
+    }
+  }
+
+  // Alignfull spacer
+  .alignfull-spacer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

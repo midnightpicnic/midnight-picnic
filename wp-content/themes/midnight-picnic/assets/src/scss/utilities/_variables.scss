@@ -1,0 +1,111 @@
+@use 'sass:math';
+
+// Color
+
+// Palette
+$color-alabaster: var(--wp--preset--color--alabaster);
+$color-blaze: var(--wp--preset--color--blaze);
+$color-daffodil: var(--wp--preset--color--daffodil);
+$color-fern: var(--wp--preset--color--fern);
+$color-fern-dark: var(--wp--preset--color--fern-dark);
+$color-skylark: var(--wp--preset--color--skylark);
+$color-cerulean: var(--wp--preset--color--cerulean);
+$color-prussian: var(--wp--preset--color--prussian);
+$color-ink: var(--wp--preset--color--ink);
+
+$color-black: $color-ink;
+$color-white: $color-alabaster;
+
+// Gradients
+$gradient-rainbow: var(--wp--preset--gradient--rainbow);
+$gradient-rainbow-bright: var(--wp--preset--gradient--rainbow-bright);
+
+// Typography
+
+// Font families
+$font-family-primary: 'Work Sans', Sans-Serif, Helvetica, Arial;
+$font-family-secondary: 'Boska', Serif, Times New Roman;
+$font-family-mono: 'Space Mono', monospace;
+
+// Font sizes
+$font-size-small: var(--wp--custom--font-size--small);
+$font-size-default: var(--wp--custom--font-size--default);
+$font-size-large: var(--wp--preset--font-size--large);
+
+$font-size-h1: var(--wp--custom--font-size--h1);
+$font-size-h2: var(--wp--custom--font-size--h2);
+$font-size-h3: var(--wp--custom--font-size--h3);
+$font-size-h4: var(--wp--custom--font-size--h4);
+$font-size-h5: var(--wp--custom--font-size--h5);
+$font-size-h6: var(--wp--custom--font-size--h6);
+
+// Layout
+$size-content: 900px; // 960
+$size-wide: 1280px;
+
+// Custom
+
+// Spacing
+$spacing-small: var(--wp--custom--spacing--small);
+$spacing-medium: var(--wp--custom--spacing--medium);
+$spacing-large: var(--wp--custom--spacing--large);
+
+// Widths
+//$width-standard: 960px;
+$width-margin: $spacing-small;
+//$width-wide: 1280px;
+$width-wide-margin: math.div(calc($size-wide - $size-content), -2);
+
+// Breakpoints
+$breakpoint-gutenberg: 599px;
+$breakpoint-standard: 900px;
+$breakpoint-standard-shift: 1052px; // $breakpoint-standard + ($width-margin * 2)
+$breakpoint-wide: 1200px;
+$breakpoint-wide-shift: 1312px; // $breakpoint-wide + ($width-margin * 2)
+
+// Headings
+$heading-font: $font-family-secondary;
+$heading-weight: 700;
+$heading-color: $color-black;
+$heading-line-height: 1.5;
+$heading-margin: 0 0 0 0;
+$heading-letter-spacing: 0.05rem;
+
+// Body type
+$body-font: $font-family-primary;
+$body-font-color: $color-black;
+$body-font-size: $font-size-default;
+$body-font-weight: 300;
+$body-line-height: 1.625;
+$body-letter-spacing: 0;
+$link-weight: inherit;
+
+// Transition
+$transition: 0.5s ease all;
+
+// Shadow
+$shadow: 4px 4px 8px rgba($color-black, .1);
+
+// Underline
+//$underline: 4px solid $color-pop;
+
+// Button
+// Baseline
+$button-font-family: $font-family-primary;
+$button-font-size: $font-size-h6;
+$button-font-weight: 600;
+$button-text-transform: uppercase;
+$button-line-height: 1.15;
+$button-letter-spacing: $heading-letter-spacing;
+$button-border-style: none;
+$button-border-width: 0;
+$button-border-radius: 0;
+$button-padding: 1.5rem 1.25rem;
+
+// Primary
+$button-primary-background-color: $gradient-rainbow;
+$button-primary-hover-background-color: $gradient-rainbow-bright;
+$button-primary-color: $color-ink;
+$button-primary-hover-color: $color-ink;
+$button-primary-border-color: transparent;
+$button-primary-hover-border-color: transparent;
