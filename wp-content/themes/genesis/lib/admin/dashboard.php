@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
 <td bgcolor="#eeeeec" align="right">405008</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/genesis/lib/admin/dashboard.php" bgcolor="#eeeeec">.../dashboard.php<b>:</b>0</td>
