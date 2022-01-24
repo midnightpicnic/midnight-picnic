@@ -133,9 +133,6 @@ wp.domReady(() => {
     'core/social-link'
   );
   wp.blocks.unregisterBlockType(
-    'core/video'
-  );
-  wp.blocks.unregisterBlockType(
     'core/site-logo'
   );
   wp.blocks.unregisterBlockType(
