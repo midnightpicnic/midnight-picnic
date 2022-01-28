@@ -19,8 +19,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0001</td>
-<td bgcolor="#eeeeec" align="right">406152</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
+<td bgcolor="#eeeeec" align="right">406984</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/genesis/lib/views/meta-boxes/genesis-cpt-archives-seo-settings.php" bgcolor="#eeeeec">.../genesis-cpt-archives-seo-settings.php<b>:</b>0</td>
 </tr>

@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
 <td bgcolor="#eeeeec" align="right">405520</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/plugins/advanced-custom-fields-pro/includes/acf-input-functions.php" bgcolor="#eeeeec">.../acf-input-functions.php<b>:</b>0</td>

@@ -16,14 +16,14 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
 <td bgcolor="#eeeeec" align="right">405048</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/midnight-picnic/lib/config.php" bgcolor="#eeeeec">.../config.php<b>:</b>0</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="center">0.0000</td>
 <td bgcolor="#eeeeec" align="right">405048</td>
 <td bgcolor="#eeeeec">midpic_config(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/midnight-picnic/lib/config.php" bgcolor="#eeeeec">.../config.php<b>:</b>45</td>

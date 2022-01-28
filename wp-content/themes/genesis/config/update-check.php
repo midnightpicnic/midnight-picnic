@@ -14,7 +14,7 @@
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
 <td bgcolor="#eeeeec" align="center">0.0001</td>
-<td bgcolor="#eeeeec" align="right">405080</td>
+<td bgcolor="#eeeeec" align="right">405880</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/genesis/config/update-check.php" bgcolor="#eeeeec">.../update-check.php<b>:</b>0</td>
 </tr>
@@ -38,7 +38,7 @@
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
 <td bgcolor="#eeeeec" align="center">0.0001</td>
-<td bgcolor="#eeeeec" align="right">405080</td>
+<td bgcolor="#eeeeec" align="right">405880</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="/Users/sb/Local Sites/personal-midnight-picnic/app/public/wp-content/themes/genesis/config/update-check.php" bgcolor="#eeeeec">.../update-check.php<b>:</b>0</td>
 </tr>
