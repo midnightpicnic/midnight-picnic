@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{ site.title }} | {{ site.description }}</title>
+  </head>
+  <body class="page-{{ page.path | replace: '_', '' | split: '/' | first | downcase }}-item">
+    {% include navigation.html %}
+
+    <main class="full grid-breakout{% if page.color %} scheme-{{ page.color }}{% endif %}">
+      <section class="portfolio-left grid-breakout-portfolio-hero">
+        <div class="wireframe wireframe-interactive scroll-reveal">
+          <div class="wireframe-nav">
+            <div class="wireframe-ellipses">
+              <div class="wireframe-ellipse"></div>
+              <div class="wireframe-ellipse"></div>
+              <div class="wireframe-ellipse"></div>
+            </div>
+            <div class="wireframe-arrows">
+              <div class="wireframe-arrow-left"></div>
+              <div class="wireframe-arrow-right"></div>
+            </div>
+            <div class="wireframe-search">
+            <div class="wireframe-rectangle">
+              <span class="text-mono">scroll me</span>
+            </div>
+            </div>
+          </div>
+          <div class="wireframe-scroll">
+              <picture>
+                <source type="image/webp" srcset="{{ site.baseurl }}/assets/images/{{ page.img }}.webp" loading="lazy">
+                <img src="{{ site.baseurl }}/assets/images/{{ page.img }}.png" loading="lazy">
+              </picture>
+          </div>
+        </div>
+        <div class="portfolio-hero">
+          <picture>
+            <source srcset="{{ site.baseurl }}/assets/images/case-study@2x.webp 2x, {{ site.baseurl }}/assets/images/case-study.webp 1x" type="image/webp">
+            <source srcset="{{ site.baseurl }}/assets/images/case-study@2x.png 2x, {{ site.baseurl }}/assets/images/case-study.png 1x" type="image/png">
+            <img src="{{ site.baseurl }}/assets/images/case-study.png" loading="lazy" class="scroll-reveal">
+          </picture>
+          <h3 class="scroll-reveal">{{ page.title }}</h3>
+          <div class="details-list scroll-reveal">
+            {% for detail in page.details %}
+            <div class="detail-item">
+              <div class="detail-label headline">{{ detail[0] | replace: '_', ' ' | capitalize }}</div>
+              <div class="detail-value text-mono">{{ detail[1] }}</div>
+            </div>
+            {% endfor %}
+          </div>
+          <p class="scroll-reveal">{{ page.summary }}</p>
+        </div>
+      </section>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
+<script src="{{ site.baseurl }}/assets/scripts/script.js"></script>

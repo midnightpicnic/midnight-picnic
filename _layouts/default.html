@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{ site.title }} | {{ site.description }}</title>
+  </head>
+  <body class="page-default">
+    {% include navigation.html %}
+
+    <main class="grid-breakout scheme-mushroom p-1">
+      {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
+<script src="{{ site.baseurl }}/assets/scripts/script.js"></script>

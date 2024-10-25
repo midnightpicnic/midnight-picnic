@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{ site.title }} | {{ site.description }}</title>
+  </head>
+  <body class="page-default">
+    {% include navigation.html %}
+
+    <main class="grid-breakout scheme-mushroom p-1">
+      <section class="content">
+        <h1 class="visually-hidden">{{ page.title }}</h1>
+        <picture>
+          <source srcset="{{ site.baseurl }}/assets/images/portfolio@2x.webp 2x, {{ site.baseurl }}/assets/images/portfolio.webp 1x" type="image/webp">
+          <source srcset="{{ site.baseurl }}/assets/images/portfolio@2x.png 2x, {{ site.baseurl }}/assets/images/portfolio.png 1x" type="image/png">
+          <img src="{{ site.baseurl }}/assets/images/portfolio.png" loading="lazy" class="scroll-reveal">
+        </picture>
+      </section>
+
+      <section class="full grid-breakout{% if page.padding %} p-{{ page.padding }}{% endif %}{% if page.color %} scheme-{{ page.color }}{% endif %}">
+        <div class="{% if page.format %}{{ page.format }}{% endif %}">
+          <div class="scroll-reveal bg-img p-3 grid-breakout{% if page.background.color %} scheme-{{ page.background.color }}{% endif %}"style="background: {% if page.background.gradient %}linear-gradient(hsl(var(--{{ page.background.gradient }})) -10%, transparent 40%), {% endif %}url({{ site.baseurl }}/assets/images/{{ page.background.image }}.{{ page.background.filetype }});">
+            <div class="content col grid-2d">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
+<script src="{{ site.baseurl }}/assets/scripts/script.js"></script>

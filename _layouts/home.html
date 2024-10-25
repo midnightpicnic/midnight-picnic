@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{ site.title }} | {{ site.description }}</title>
+  </head>
+  <body class="page-home">
+    {% include navigation.html %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
+<script src="{{ site.baseurl }}/assets/scripts/script.js"></script>
+<script src="{{ site.baseurl }}/assets/scripts/home.js"></script>
