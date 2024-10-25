@@ -4,9 +4,11 @@
 .jekyll-metadata/
 .bundle/
 vendor/
+site/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+site
 Gemfile.lock
 assets/images/originals
