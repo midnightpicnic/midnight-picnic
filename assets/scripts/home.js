@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateClasses();
 
   let stampIndex = 0;
-  const stampUrls = Array.from({ length: 10 }, (_, i) => `stamp0${i + 1}.svg`);
+  const stampUrls = Array.from({ length: 10 }, (_, i) => `stamp${i + 1}.svg`);
 
   const addStamp = (x, y) => {
     const img = document.createElement("img");
