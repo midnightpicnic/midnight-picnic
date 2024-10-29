@@ -1264,12 +1264,13 @@ picture[class^="col"] .img-vert {
 
 .slide-in-content p {
   text-wrap: balance;
-  font-size: var(--step--6);
+  font-size: var(--step--5);
 }
 
 @media (min-width: 1024px) {
   .slide-in-content p {
     max-width: calc(100% - var(--gap) * 2);
+    font-size: var(--step--3);
   }
 }
 
