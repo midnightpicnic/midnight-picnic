@@ -13,28 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
     
-  const heroGraphic4 = document.getElementById('hero-graphic4');
   const stampsContainer = document.querySelector("section#hero");
   const asterisk = document.querySelector('.asterisk');
   const slideIn = document.querySelector('.slide-in');
   const sarah = document.querySelector('#sarah');
   const draggableElements = document.querySelectorAll(".draggable");
   const cards = document.querySelectorAll('#contact .card');
-
-  const updateClasses = () => {
-    if (heroGraphic4) {
-      const screenWidth = window.innerWidth;
-      heroGraphic4.classList.toggle('row-start-7', screenWidth >= 1390);
-      heroGraphic4.classList.toggle('row-end-8', screenWidth >= 1390);
-      heroGraphic4.classList.toggle('row-start-6', screenWidth < 1390);
-      heroGraphic4.classList.toggle('row-end-7', screenWidth < 1390);
-    }
-  };
-
-  if (heroGraphic4) {
-    window.addEventListener('resize', updateClasses);
-  }
-  updateClasses();
 
   let stampIndex = 0;
   const stampUrls = Array.from({ length: 10 }, (_, i) => `stamp${i + 1}.svg`);
